@@ -62,7 +62,7 @@ class SnakeGame:
         plt.scatter([x for x, y in self.points], [y for x, y in self.points], color='green', marker='s', s=100)
         plt.xlim(0, self.width)
         plt.ylim(0, self.height)
-        plt.title("Points: " + str(len(self.snake) - 1))
+        plt.title(f"Points: {len(self.snake) - 1}")
     
 
     def change_direction_on_key(self, event):

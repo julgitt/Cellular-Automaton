@@ -39,7 +39,7 @@ class LangtonAnt:
 
     def update(self, frame):
         if self.steps == self.max_steps:
-            plt.title("Simulation Completed\nSteps: " + str(self.steps))
+            plt.title("Simulation Completed\nSteps: {self.steps}")
             return
 
         if self.ant_pos in self.dead_points:
@@ -58,7 +58,7 @@ class LangtonAnt:
         plt.scatter(self.ant_pos[0], self.ant_pos[1], color='red', marker='s', s=5)
         plt.xlim(0, self.width)
         plt.ylim(0, self.height)
-        plt.title("Steps: " + str(self.steps))
+        plt.title("Steps: {self.steps}")
     
     
     def start_simulation(self):
